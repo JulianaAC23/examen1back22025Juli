@@ -5,8 +5,8 @@ import jakarta.persistence.*;
 @Entity
 public class Curso {
 
-    @I
-    @Ge(strategy = IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nombre
 
