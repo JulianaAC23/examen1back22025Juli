@@ -2,19 +2,19 @@ package com.example.Examen1Back2.modelos;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
-@Entit
+@Entity
 @Table(name = "usuarios")
 public class Usuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.)
-    @Colun(name = "id_usuario")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_usuario")
     private Integer id;
 
     @Column(nullable = false, length = 100)
     private String nombre;
 
-    @Colun(name = "correo_electronico", unique = true)
+    @Column(name = "correo_electronico", unique = true)
     private String correoElectronico;
     private String contraseña;
     private String telefono;

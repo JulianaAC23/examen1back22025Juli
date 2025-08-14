@@ -1,4 +1,4 @@
-# 📌 Nombre del Proyecto
+# 📌 Examen 1 Backend2 
 
 ## 📝 Descripción del Proyecto
 Este proyecto es para corregir y estructurar adecuadamente
@@ -22,11 +22,11 @@ Listado de errores encontrados en el proyecto y cómo fueron solucionados.
 | 8  | this.id = id; - this.nombre = nombre; (Clase Curso)          | Le hace falta los métodos Getter y Setter                       | Se agregan los métodos Getter y Setter con la herramienta Generate -> Getter and Setter a: id, nombre y docente;                                                |
 | 9  | @Entit (Clase Docente)                                       | Esta anotación esta incompleta                                  | Se corrige por la anotación correcta @Entity                                                                                                                    |
 | 10 | No hay @Id (Clase Docente)                                   | Esta anotación hace falta para la clave primaria                | Se añade la anotación @Id encima de @GenerateValue(...)                                                                                                         |
-| 11 | No hay constructores vacios                                  | Esto es buena práctica para que JPA pueda instanciarla          | Se añaden los constructores vacios                                                                                                                              |
+| 11 | No hay constructores vacios (Clase Docente)                  | Esto es buena práctica para que JPA pueda instanciarla          | Se añaden los constructores vacios                                                                                                                              |
 | 12 | Faltan algunos Getter y Setter en los campos (Clase Docente) | Los Getter y Setter están incompletos                           | Se añaden los Getter y Setter faltantes                                                                                                                         |
-| 13 |                                                              |                                                                 |                                                                                                                                                                 |
-| 14 |                                                              |                                                                 |                                                                                                                                                                 |
-| 15 |                                                              |                                                                 |                                                                                                                                                                 |
+| 13 | @Entit (Clase Usuario)                                       | Esta anotación esta incompleta                                  | Se corrige la anotación correcta: @Entity                                                                                                                       |
+| 14 | strategy = GenerationType. (Clase Usuario)                   | Esta parte esta incompleta, le falta especificar el tipo        | Se completa por: strategy = GenerationType.IDENTITY al ser clave primaria                                                                                       |
+| 15 | @Colun (Clase Usuario)                                       | Esta anotación esta escrita de forma incorrecta en tres sitios  | Se escribe de forma correcta en los tres sitios: @Column                                                                                                        |
 | 16 |                                                              |                                                                 |                                                                                                                                                                 |
 | 17 |                                                              |                                                                 |                                                                                                                                                                 |
 | 18 |                                                              |                                                                 |                                                                                                                                                                 |
@@ -45,3 +45,4 @@ Pasos para configurar la conexión a la base de datos (ej. MySQL, PostgreSQL, et
 
 
 ## 📝 Recomendaciones 
+Este plantilla se realizó con ayuda de Inteligencia Artificial.
