@@ -10,15 +10,15 @@ correctamente la conexión a una base de datos relacional denominada develop_db.
 ## 🛠️ Errores Corregidos
 Listado de errores encontrados en el proyecto y cómo fueron solucionados.
 
-| Nº | Error detectado     | Causa                                                         | Solución aplicada                                                                                                                                               |
-|----|---------------------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1  | Error en Gradle     | Falta el arcrhivo `pom.xml` donde se manejan las dependencias | Se cambió la herramienta Gradle por Maven. Primero agregué las dependencias en pom.xml y luego Add as Maven Project y al final sincronicé el proyecto con Maven |
-| 2  | @I                  | Esta anotación no existe                                      | Se cambió @I, por @Id, la cual es la correcta                                                                                                                   |
-| 3  | @Ge                 | Anotación incorrecta                                          | Se cambió @Ge, por @GenerateValue, la cual es la correcta                                                                                                       |
-| 4  | strategy = IDENTITY | Esta para generar valores automáticos esta incompleta         | La anotación completa es @GenerateValue(strategy = GenerationType.IDENTITY)                                                                                     |
-| 5  | ...                 | ...                                                           | ...                                                                                                                                                             |
-| 6  | ...                 | ...                                                           | ...                                                                                                                                                             |
-| 7  | ...                 | ...                                                           | ...                                                                                                                                                             |
+| Nº | Error detectado       | Causa                                                         | Solución aplicada                                                                                                                                               |
+|----|-----------------------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | Error en Gradle       | Falta el arcrhivo `pom.xml` donde se manejan las dependencias | Se cambió la herramienta Gradle por Maven. Primero agregué las dependencias en pom.xml y luego Add as Maven Project y al final sincronicé el proyecto con Maven |
+| 2  | @I                    | Esta anotación no existe                                      | Se cambió @I, por @Id, la cual es la correcta                                                                                                                   |
+| 3  | @Ge                   | Anotación incorrecta                                          | Se cambió @Ge, por @GenerateValue, la cual es la correcta                                                                                                       |
+| 4  | strategy = IDENTITY   | Esta para generar valores automáticos esta incompleta         | La anotación completa es @GenerateValue(strategy = GenerationType.IDENTITY)                                                                                     |
+| 5  | private String nombre | Las variables tienen que terminar con ";"                     | Se añade punto y coma al final: private String nombre;                                                                                                          |
+| 6  | @JoinColumn(....);    | Las anotaciones NO deben terminar con ";"                     | Se quita el punto y coma al final de esta anotación: @JoinColumn(....)                                                                                          |
+| 7  | ...                   | ...                                                           | ...                                                                                                                                                             |
 
 
 
