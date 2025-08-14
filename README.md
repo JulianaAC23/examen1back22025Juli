@@ -29,17 +29,19 @@ Listado de errores encontrados en el proyecto y cómo fueron solucionados.
 | 15 | @Colun (Clase Usuario)                                       | Esta anotación esta escrita de forma incorrecta en tres sitios               | Se escribe de forma correcta en los tres sitios: @Column                                                                                                        |
 | 16 | private String contraseña; (Clase Usuario)                   | Falta de mapeo en la columna contraseña, por buena práctica por la letra "ñ" | Se mapea con @Column(name = "contraseña")...                                                                                                                    |
 | 17 | this.id = id; this.nombre = nombre;.... (Clase Usuario)      | Faltan los Getter y Setter                                                   | Se agregan los métodos Getter y Setter con la herramienta Generate -> Getter and Setter                                                                         |
-| 18 | TipoUsuario                                                  | Este enum aun no existe                                                      | Se crea la clase Enum donde están los tipos de usuarios: Estudiante, Docente y Familiar                                                                         |
+| 18 | TipoUsuario (Clase Usuario)                                  | Este enum aun no existe                                                      | Se crea la clase Enum donde están los tipos de usuarios: Estudiante, Docente y Familiar                                                                         |
 
 
 
 ---
 
 ## 🔌 Guía de Conexión a la Base de Datos
-Pasos para configurar la conexión a la base de datos (ej. MySQL, PostgreSQL, etc.).
+Pasos para configurar la conexión a la base de datos local con MySQL.
 
-1. **Instalar la base de datos** (indicar versión recomendada).
-2. **Crear la base de datos**:
+1. **Iniciar MySQL en XAMPP** 
+2. **En XAMPP dirigirte a phpmyadmin por medio del bóton 'Admin'**
+3. **En phpmyadmin irte a 'Nueva' base de datos en la columna izquierda**
+4. **Ponerle el nombre a la base de datos en este caso: develop_db y darle al botón Crear**
    ```sql
    CREATE DATABASE nombre_bd;
 
