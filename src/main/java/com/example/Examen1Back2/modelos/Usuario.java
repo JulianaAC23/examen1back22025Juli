@@ -16,7 +16,10 @@ public class Usuario {
 
     @Column(name = "correo_electronico", unique = true)
     private String correoElectronico;
-    private String contraseña;
+
+    @Column(name = "contraseña")
+    private String contrasena;
+
     private String telefono;
 
     @Enumerated(EnumType.STRING)
