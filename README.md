@@ -47,9 +47,9 @@ Pasos para configurar la conexión a la base de datos local con MySQL.
    Poner el username: root, este es el que maneja MySQL por defecto
    Poner password: (vacia) ya que no se tiene una
    poner la url con el nombre de la base de datos
-6. Ejecutamos la aplicación para crear la columnas en la base de datos. 
-7. Cuando se termine de ejecutar veremos este mensaje al final en la consola 'Started Examen1Back2Application in 8.485 seconds (process running for 9.663)'
-8. Vamos a phpmyadmin, actualizamos la páginas y veremos que nuestras columnas: 'curso, docente y usuario' , ya están creadas 
+6. **Ejecutamos la aplicación para crear la columnas en la base de datos**
+7. **Cuando se termine de ejecutar veremos este mensaje al final en la consola 'Started Examen1Back2Application in 8.485 seconds (process running for 9.663)'**
+8. **Vamos a phpmyadmin, actualizamos la páginas y veremos que nuestras columnas: 'curso, docente y usuario' , ya están creadas** 
    
 
 
