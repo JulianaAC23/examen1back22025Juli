@@ -54,4 +54,13 @@ Pasos para configurar la conexión a la base de datos local con MySQL.
 
 
 ## 📝 Recomendaciones 
+1. Manejar versiones de Java compatibles
+2. Para este tipo de aplicación con SprinBoot se trabaja con Maven y no con Gradle
+3. Usar JPA para mantener tu base de datos limpia en cada prueba
+4. Asegurarte de que tengas una buena arquitectura por capas
+5. Siempre las clases deben ser Singulares.
+6. Asegurarte de que tu archivo pom.xml tenga los datos correspondientes a las dependencias
+7. Manejar siempre un versionamiento en Git por si tienes algún error
+
+
 Este plantilla se realizó con ayuda de Inteligencia Artificial.
