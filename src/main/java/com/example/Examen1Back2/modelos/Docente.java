@@ -49,4 +49,20 @@ public class Docente {
     public void setEspecialidad(String especialidad) {
         this.especialidad = especialidad;
     }
+
+    public List<Curso> getCursos(){
+        return cursos;
+    }
+
+    public void setCursos(List<Curso> cursos) {
+        this.cursos = cursos;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
 }
