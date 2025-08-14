@@ -42,8 +42,7 @@ Pasos para configurar la conexión a la base de datos local con MySQL.
 2. **En XAMPP dirigirte a phpmyadmin por medio del bóton 'Admin'**
 3. **En phpmyadmin irte a 'Nueva' base de datos en la columna izquierda**
 4. **Ponerle el nombre a la base de datos en este caso: develop_db y darle al botón Crear**
-   ```sql
-   CREATE DATABASE nombre_bd;
+   
 
 
 ## 📝 Recomendaciones 
